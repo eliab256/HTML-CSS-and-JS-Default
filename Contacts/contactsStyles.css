@@ -1,5 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  cursor: pointer;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+
+}
+
 main{
+  display: flex;
   justify-content: center; 
+  flex: 1;
  }
 
 .form-container{
@@ -112,5 +131,10 @@ main{
       width: 60%;
       max-width: 350px;
      }
+
+    
+  .width-controller{
+    width: 960px;
+  }
 
   }

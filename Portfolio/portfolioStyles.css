@@ -36,6 +36,7 @@ main{
   display: flex;
   justify-content: center; 
   flex: 1; 
+  /*add background here*/
 }
 
 .main-container-portfolio{
@@ -161,10 +162,6 @@ main{
       border: black 3px solid;
     }
 
-    .item-title-box h3{
-      font-size: 23px;
-    }
-
   }
   
   /* Desktop Styles */
@@ -173,6 +170,10 @@ main{
     .works-grid-item{
       width: 30%;
       border: black 5px solid;
+    }
+
+    .width-controller{
+      width: 960px;  /*control the maximum size on desktop device*/
     }
 
    
