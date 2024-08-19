@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+p{
+
+}
+
+a{
+  cursor: pointer;
+}
+
+
+
+html, body{
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+main{
+  display: flex;
+  justify-content: center; 
+  flex: 1; 
+}
+
+.main-container-portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title{
+  display: flex;
+  align-content: center; 
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
+  flex: 0;
+}
+
+.all-works {
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  /*add margin top*/
+}
+
+.section-works{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  /*add padding bottom*/
+}
+
+.name-section-works{
+  display: flex;  
+  align-items: center; 
+  justify-content: center;
+  height: auto;
+ /*add margin and padding*/
+}
+
+.name-section-works h2{
+  text-align: center;
+}
+
+.works-grid{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  /*add padding*/
+}
+
+.works-grid-item{
+ display: flex;
+ flex-direction:column;
+ justify-content: center;
+ align-items: center;
+ border: black 3px solid;
+ border-radius: 3px;
+ width: 100%;
+ aspect-ratio: 1/1;
+ /*margin: 10px;
+ background-color: white;
+ color: black; */
+}
+
+.works-grid-item a{
+  text-decoration: none;
+  color: black;
+}
+
+.item-image-box{
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  flex: 1;
+  padding: 5%;
+  position: relative;
+}
+
+.item-title-box{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  /*margin-bottom: 3%;*/
+  z-index: 2;
+}
+
+.works-grid-item img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.WIP::after{
+  content:"";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url(../img/Work\ in\ progress.PNG.png) no-repeat center center;
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.816);
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+
+    .works-grid-item{
+      width: 42%;
+      border: black 3px solid;
+    }
+
+    .item-title-box h3{
+      font-size: 23px;
+    }
+
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+  
+    .works-grid-item{
+      width: 30%;
+      border: black 5px solid;
+    }
+
+   
+
+  }

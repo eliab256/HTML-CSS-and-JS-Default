@@ -1,0 +1,116 @@
+main{
+  justify-content: center; 
+ }
+
+.form-container{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.title{
+  margin: 0 auto;
+}
+
+
+.form-container p {  
+  height: auto;
+  text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    
+  }
+
+  .form-row input[type='text']
+  .form-row input[type='email'] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin: 0 auto;
+  }
+  
+  .form-row input[type='text']:invalid,
+  .form-row input[type='email']:invalid {
+    border: 1px solid #D55C5F;
+     color: #D55C5F;
+    box-shadow: none; 
+  }
+
+  .form-row textarea {
+    font-size: 14px;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  }
+
+  .form-row button {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  .form-row button:hover {
+    background-color:rgb(10, 10, 191);
+    border-color: white ;
+    color: white;
+  }
+  
+  .form-row button:active {
+    background-color: #407FC7;
+  }
+
+  .contact-form label {
+    margin-bottom: 5px;
+  }
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 400px) {
+
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+   .form-row{
+    width: 50%;
+    max-width: 300px;
+   }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    
+    .form-row{
+      width: 60%;
+      max-width: 350px;
+     }
+
+  }
